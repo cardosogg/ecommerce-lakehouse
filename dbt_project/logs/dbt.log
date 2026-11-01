@@ -1,0 +1,1783 @@
+[0m10:52:40.647839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0404e7d550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0406c48a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04037f3890>]}
+
+
+============================== 10:52:40.660725 | fd6b297e-264c-44c7-8792-c1c8c2338143 ==============================
+[0m10:52:40.660725 [info ] [MainThread]: Running with dbt=1.12.6
+[0m10:52:40.661685 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'hints_enabled': 'True', 'log_format': 'default', 'debug': 'False', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'use_colors': 'True', 'profiles_dir': '/home/cardoso/.dbt', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'empty': 'False', 'introspect': 'True', 'quiet': 'False'}
+[0m10:52:40.667086 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Could not find profile named 'ecommerce_lakehouse'
+[0m10:52:40.671962 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.14825194, "process_in_blocks": "40409", "process_kernel_time": 1.274343, "process_mem_max_rss": "118852", "process_out_blocks": "0", "process_user_time": 2.015335}
+[0m10:52:40.673437 [debug] [MainThread]: Command `dbt run` failed at 10:52:40.673274 after 0.15 seconds
+[0m10:52:40.674740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f040383f5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04036883b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f040362e140>]}
+[0m10:52:40.675979 [debug] [MainThread]: Flushing usage events
+[0m10:52:41.553458 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:57:07.065340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedd66f9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedd84a8a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedd4ed3890>]}
+
+
+============================== 10:57:07.083912 | a15c8b16-df53-4e9a-b491-e580a04cd972 ==============================
+[0m10:57:07.083912 [info ] [MainThread]: Running with dbt=1.12.6
+[0m10:57:07.086443 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'invocation_command': 'dbt run', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/cardoso/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'version_check': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'introspect': 'True', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'empty': 'False'}
+[0m10:57:08.392904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedd01275c0>]}
+[0m10:57:08.489983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedd50cb130>]}
+[0m10:57:08.511490 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m10:57:19.239720 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m10:57:19.254291 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:57:19.256625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcfc48150>]}
+[0m10:57:22.736520 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.ecommerce_lakehouse.silver
+- models.ecommerce_lakehouse.bronze
+- models.ecommerce_lakehouse.gold
+[0m10:57:22.742627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcfe75c70>]}
+[0m10:57:22.849083 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m10:57:22.861930 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m10:57:23.274313 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m10:57:23.448657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcf3e5ef0>]}
+[0m10:57:23.450253 [info ] [MainThread]: Found 511 macros
+[0m10:57:23.452134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a15c8b16-df53-4e9a-b491-e580a04cd972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcff097e0>]}
+[0m10:57:23.455098 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m10:57:23.457110 [debug] [MainThread]: Command end result
+[0m10:57:23.511107 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m10:57:23.528657 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m10:57:23.549223 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m10:57:23.564061 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m10:57:23.570561 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 16.648727, "process_in_blocks": "41608", "process_kernel_time": 2.605359, "process_mem_max_rss": "154944", "process_out_blocks": "8", "process_user_time": 4.182955}
+[0m10:57:23.572622 [debug] [MainThread]: Command `dbt run` succeeded at 10:57:23.572268 after 16.65 seconds
+[0m10:57:23.574748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcf391850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcf27fd80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dedcf27fe30>]}
+[0m10:57:23.576616 [debug] [MainThread]: Flushing usage events
+[0m10:57:24.129449 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:00:33.184778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959f5d91550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959f7b5ca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959f4507890>]}
+
+
+============================== 11:00:33.195371 | 965d74bc-6c0f-4275-b755-d36a5ac2f613 ==============================
+[0m11:00:33.195371 [info ] [MainThread]: Running with dbt=1.12.6
+[0m11:00:33.196598 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'no_print': 'None', 'debug': 'False', 'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'write_json': 'True', 'fail_fast': 'False', 'target_path': 'None', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'quiet': 'False', 'printer_width': '80', 'invocation_command': 'dbt run', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'profiles_dir': '/home/cardoso/.dbt', 'use_experimental_parser': 'False', 'static_parser': 'True'}
+[0m11:00:34.085792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ef9bf5c0>]}
+[0m11:00:34.162448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959f470b130>]}
+[0m11:00:34.181247 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m11:00:44.133258 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m11:00:46.029621 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:00:46.030904 [debug] [MainThread]: Partial parsing: added file: ecommerce_lakehouse://models/silver/silver_customers.sql
+[0m11:00:46.341535 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_lakehouse.gold
+- models.ecommerce_lakehouse.bronze
+[0m11:00:46.348354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ef4dc950>]}
+[0m11:00:46.441389 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:00:46.453709 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:00:46.824357 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:00:46.939920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ed708140>]}
+[0m11:00:46.941449 [info ] [MainThread]: Found 1 model, 511 macros
+[0m11:00:46.942674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ed716dd0>]}
+[0m11:00:46.946700 [info ] [MainThread]: 
+[0m11:00:46.948951 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:00:46.951064 [info ] [MainThread]: 
+[0m11:00:46.952806 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:00:46.955060 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_lakehouse'
+[0m11:00:50.098019 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse"
+[0m11:00:50.098883 [debug] [ThreadPool]: On list_lakehouse: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"lakehouse"'
+    
+  
+  
+[0m11:00:50.099906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:00:50.418509 [debug] [ThreadPool]: SQL status: OK in 0.318 seconds
+[0m11:00:50.421243 [debug] [ThreadPool]: On list_lakehouse: Close
+[0m11:00:50.422629 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_lakehouse, now create_lakehouse_main)
+[0m11:00:50.423505 [debug] [ThreadPool]: Creating schema "database: "lakehouse"
+schema: "main"
+"
+[0m11:00:50.430042 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:00:50.431216 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='lakehouse'
+        and type != 'duckdb'
+    
+  
+[0m11:00:50.432163 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:00:50.436270 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m11:00:50.438104 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:00:50.438864 [debug] [ThreadPool]: On create_lakehouse_main: BEGIN
+[0m11:00:50.440527 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:00:50.441582 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:00:50.442261 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+    
+        create schema if not exists "lakehouse"."main"
+    
+[0m11:00:50.445987 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m11:00:50.447592 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:00:50.448385 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:00:50.449067 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:00:50.450289 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:00:50.451027 [debug] [ThreadPool]: On create_lakehouse_main: Close
+[0m11:00:50.453064 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_lakehouse_main, now list_lakehouse_main)
+[0m11:00:50.457640 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:00:50.458551 [debug] [ThreadPool]: On list_lakehouse_main: BEGIN
+[0m11:00:50.459192 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:00:50.460552 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:00:50.461452 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:00:50.462156 [debug] [ThreadPool]: On list_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse_main"} */
+select
+      'lakehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'lakehouse'
+  
+[0m11:00:50.483091 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m11:00:50.485063 [debug] [ThreadPool]: On list_lakehouse_main: ROLLBACK
+[0m11:00:50.486584 [debug] [ThreadPool]: On list_lakehouse_main: Close
+[0m11:00:50.488366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959eccbce20>]}
+[0m11:00:50.489293 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:00:50.490008 [debug] [MainThread]: On master: BEGIN
+[0m11:00:50.490692 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:00:50.492352 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m11:00:50.493207 [debug] [MainThread]: On master: COMMIT
+[0m11:00:50.494085 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:00:50.494787 [debug] [MainThread]: On master: COMMIT
+[0m11:00:50.495953 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:00:50.496769 [debug] [MainThread]: On master: Close
+[0m11:00:50.502356 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_customers
+[0m11:00:50.503795 [info ] [Thread-1 (]: 1 of 1 START sql table model main.silver_customers ............................. [RUN]
+[0m11:00:50.504893 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_lakehouse_main, now model.ecommerce_lakehouse.silver_customers)
+[0m11:00:50.505719 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_customers
+[0m11:00:50.511469 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.526433 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_customers
+[0m11:00:50.528490 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.529487 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+select database_name, type from duckdb_databases()
+[0m11:00:50.530626 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:00:50.533665 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:00:50.536514 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.537832 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('lakehouse')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m11:00:50.540779 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:00:50.615195 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.632310 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.633253 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: BEGIN
+[0m11:00:50.634989 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:00:50.636405 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.637436 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_customers__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    customer_id,
+    CAST(signup_date AS DATE) AS signup_date,
+    UPPER(state) AS state,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/customers.parquet')
+    );
+    
+  
+[0m11:00:50.667881 [debug] [Thread-1 (]: SQL status: OK in 0.030 seconds
+[0m11:00:50.673403 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.674436 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers__dbt_tmp" rename to "silver_customers"
+[0m11:00:50.677640 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:00:50.699330 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:00:50.700710 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.701634 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:00:50.709009 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m11:00:50.714808 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:00:50.716099 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+      drop table if exists "lakehouse"."main"."silver_customers__dbt_backup" cascade
+    
+[0m11:00:50.717898 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:00:50.720986 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: Close
+[0m11:00:50.730495 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '965d74bc-6c0f-4275-b755-d36a5ac2f613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959eccd1250>]}
+[0m11:00:50.732082 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.silver_customers ........................ [[32mOK[0m in 0.22s]
+[0m11:00:50.734042 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_customers
+[0m11:00:50.737079 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:00:50.737918 [debug] [MainThread]: On master: BEGIN
+[0m11:00:50.738746 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:00:50.739958 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:00:50.740666 [debug] [MainThread]: On master: COMMIT
+[0m11:00:50.741336 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:00:50.741970 [debug] [MainThread]: On master: COMMIT
+[0m11:00:50.743040 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:00:50.744031 [debug] [MainThread]: On master: Close
+[0m11:00:50.745137 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:00:50.746086 [debug] [MainThread]: Connection 'model.ecommerce_lakehouse.silver_customers' was properly closed.
+[0m11:00:50.746838 [info ] [MainThread]: 
+[0m11:00:50.747750 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.79 seconds (3.79s).
+[0m11:00:50.748862 [debug] [MainThread]: Command end result
+[0m11:00:50.781903 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:00:50.791607 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:00:50.799935 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:00:50.808760 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m11:00:50.809550 [info ] [MainThread]: 
+[0m11:00:50.810341 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:00:50.811042 [info ] [MainThread]: 
+[0m11:00:50.811808 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m11:00:50.814053 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.706259, "process_in_blocks": "44237", "process_kernel_time": 2.633531, "process_mem_max_rss": "185320", "process_out_blocks": "0", "process_user_time": 3.32457}
+[0m11:00:50.814873 [debug] [MainThread]: Command `dbt run` succeeded at 11:00:50.814771 after 17.71 seconds
+[0m11:00:50.815585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ecb48ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ef8bfd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7959ecc909b0>]}
+[0m11:00:50.816243 [debug] [MainThread]: Flushing usage events
+[0m11:00:51.365255 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:04:40.414701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e66ed550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e84a8a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e4ec7890>]}
+
+
+============================== 11:04:40.430658 | 74969555-0f78-49dc-87fa-c85bcd459b29 ==============================
+[0m11:04:40.430658 [info ] [MainThread]: Running with dbt=1.12.6
+[0m11:04:40.432136 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'version_check': 'True', 'empty': 'False', 'debug': 'False', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'profiles_dir': '/home/cardoso/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'hints_enabled': 'True', 'target_path': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'use_colors': 'True', 'cache_selected_only': 'False'}
+[0m11:04:41.638575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e01275c0>]}
+[0m11:04:41.714652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e50bf130>]}
+[0m11:04:41.736173 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m11:04:51.059786 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m11:04:53.015748 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m11:04:53.017169 [debug] [MainThread]: Partial parsing: added file: ecommerce_lakehouse://models/silver/silver_products.sql
+[0m11:04:53.018132 [debug] [MainThread]: Partial parsing: added file: ecommerce_lakehouse://models/silver/silver_sales.sql
+[0m11:04:53.337947 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_lakehouse.bronze
+- models.ecommerce_lakehouse.gold
+[0m11:04:53.344000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186dfc48950>]}
+[0m11:04:53.441504 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:04:53.455219 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:04:53.892359 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:04:54.030021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186de084500>]}
+[0m11:04:54.070611 [info ] [MainThread]: Found 3 models, 511 macros
+[0m11:04:54.072003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186de05f3f0>]}
+[0m11:04:54.076291 [info ] [MainThread]: 
+[0m11:04:54.079520 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:04:54.081128 [info ] [MainThread]: 
+[0m11:04:54.084372 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:04:54.092871 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_lakehouse'
+[0m11:04:57.428420 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse"
+[0m11:04:57.429540 [debug] [ThreadPool]: On list_lakehouse: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"lakehouse"'
+    
+  
+  
+[0m11:04:57.430631 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:04:57.727401 [debug] [ThreadPool]: SQL status: OK in 0.297 seconds
+[0m11:04:57.730068 [debug] [ThreadPool]: On list_lakehouse: Close
+[0m11:04:57.731513 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_lakehouse, now create_lakehouse_main)
+[0m11:04:57.732608 [debug] [ThreadPool]: Creating schema "database: "lakehouse"
+schema: "main"
+"
+[0m11:04:57.739199 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:04:57.740149 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='lakehouse'
+        and type != 'duckdb'
+    
+  
+[0m11:04:57.740960 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:04:57.745833 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m11:04:57.747408 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:04:57.748160 [debug] [ThreadPool]: On create_lakehouse_main: BEGIN
+[0m11:04:57.750034 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:04:57.751037 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:04:57.751870 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+    
+        create schema if not exists "lakehouse"."main"
+    
+[0m11:04:57.754482 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:04:57.755916 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:04:57.756895 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:04:57.757733 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:04:57.759354 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:04:57.760063 [debug] [ThreadPool]: On create_lakehouse_main: Close
+[0m11:04:57.762126 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_lakehouse_main, now list_lakehouse_main)
+[0m11:04:57.767189 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:04:57.768113 [debug] [ThreadPool]: On list_lakehouse_main: BEGIN
+[0m11:04:57.768860 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:04:57.770464 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:04:57.771495 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:04:57.772308 [debug] [ThreadPool]: On list_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse_main"} */
+select
+      'lakehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'lakehouse'
+  
+[0m11:04:57.796258 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m11:04:57.798706 [debug] [ThreadPool]: On list_lakehouse_main: ROLLBACK
+[0m11:04:57.800291 [debug] [ThreadPool]: On list_lakehouse_main: Close
+[0m11:04:57.802037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e01b75f0>]}
+[0m11:04:57.802922 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:04:57.803585 [debug] [MainThread]: On master: BEGIN
+[0m11:04:57.804362 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:04:57.806005 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m11:04:57.806920 [debug] [MainThread]: On master: COMMIT
+[0m11:04:57.807880 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:04:57.808567 [debug] [MainThread]: On master: COMMIT
+[0m11:04:57.809600 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:04:57.810331 [debug] [MainThread]: On master: Close
+[0m11:04:57.814559 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_customers
+[0m11:04:57.815602 [info ] [Thread-1 (]: 1 of 3 START sql table model main.silver_customers ............................. [RUN]
+[0m11:04:57.816484 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_lakehouse_main, now model.ecommerce_lakehouse.silver_customers)
+[0m11:04:57.817180 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_customers
+[0m11:04:57.822543 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.831109 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_customers
+[0m11:04:57.833589 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.834815 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+select database_name, type from duckdb_databases()
+[0m11:04:57.835710 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:57.837606 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:04:57.840149 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.841493 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('lakehouse')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m11:04:57.844202 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:57.898256 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.906975 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.907795 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: BEGIN
+[0m11:04:57.909654 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:57.910989 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.911808 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_customers__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    customer_id,
+    CAST(signup_date AS DATE) AS signup_date,
+    UPPER(state) AS state,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/customers.parquet')
+    );
+    
+  
+[0m11:04:57.943406 [debug] [Thread-1 (]: SQL status: OK in 0.030 seconds
+[0m11:04:57.948124 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.949049 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_customers'
+  
+[0m11:04:57.951437 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:04:57.962513 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.963620 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers" rename to "silver_customers__dbt_backup"
+[0m11:04:57.967363 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:04:57.969759 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.970619 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers__dbt_tmp" rename to "silver_customers"
+[0m11:04:57.972446 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:57.988302 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:04:57.989306 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:57.990047 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:04:58.034635 [debug] [Thread-1 (]: SQL status: OK in 0.044 seconds
+[0m11:04:58.039630 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:04:58.040596 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+      drop table if exists "lakehouse"."main"."silver_customers__dbt_backup" cascade
+    
+[0m11:04:58.044886 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:04:58.047761 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: Close
+[0m11:04:58.058429 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186dd455850>]}
+[0m11:04:58.059677 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main.silver_customers ........................ [[32mOK[0m in 0.23s]
+[0m11:04:58.060782 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_customers
+[0m11:04:58.061808 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_products
+[0m11:04:58.062890 [info ] [Thread-1 (]: 2 of 3 START sql table model main.silver_products .............................. [RUN]
+[0m11:04:58.064253 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_customers, now model.ecommerce_lakehouse.silver_products)
+[0m11:04:58.065026 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_products
+[0m11:04:58.067119 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.075439 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_products
+[0m11:04:58.079554 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.089689 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.091089 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: BEGIN
+[0m11:04:58.092257 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:58.093503 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:58.094292 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.095004 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_products__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    product_id,
+    category,
+    unit_price,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/products.parquet')
+    );
+    
+  
+[0m11:04:58.103865 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m11:04:58.106449 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.107179 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+alter table "lakehouse"."main"."silver_products__dbt_tmp" rename to "silver_products"
+[0m11:04:58.108513 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:58.110530 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:04:58.111480 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.112503 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:04:58.115671 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:04:58.118047 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:04:58.118890 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+      drop table if exists "lakehouse"."main"."silver_products__dbt_backup" cascade
+    
+[0m11:04:58.120207 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:04:58.121671 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: Close
+[0m11:04:58.122583 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186dc0ae0a0>]}
+[0m11:04:58.123461 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.silver_products ......................... [[32mOK[0m in 0.06s]
+[0m11:04:58.124613 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_products
+[0m11:04:58.125788 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_sales
+[0m11:04:58.126776 [info ] [Thread-1 (]: 3 of 3 START sql table model main.silver_sales ................................. [RUN]
+[0m11:04:58.127740 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_products, now model.ecommerce_lakehouse.silver_sales)
+[0m11:04:58.128453 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_sales
+[0m11:04:58.130371 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:04:58.138190 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_sales
+[0m11:04:58.142064 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:04:58.150807 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:04:58.152073 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: BEGIN
+[0m11:04:58.153352 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:58.154954 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:04:58.156058 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:04:58.156902 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_sales__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    sale_id,
+    customer_id,
+    product_id,
+    quantity,
+    total_amount,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/sales.parquet')
+    );
+    
+  
+[0m11:04:58.175237 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "sale_id" not found in FROM clause!
+Candidate bindings: "customer_id", "order_id", "total_amount", "quantity"
+
+LINE 15:     CURRENT_TIMESTAMP as dbt_updated_at
+                                               ^
+[0m11:04:58.176164 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_sales__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    sale_id,
+    customer_id,
+    product_id,
+    quantity,
+    total_amount,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/sales.parquet')
+    );
+    
+  
+[0m11:04:58.176898 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m11:04:58.177581 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: ROLLBACK
+[0m11:04:58.178829 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: Close
+[0m11:04:58.236900 [debug] [Thread-1 (]: Runtime Error in model silver_sales (models/silver/silver_sales.sql)
+  Binder Error: Referenced column "sale_id" not found in FROM clause!
+  Candidate bindings: "customer_id", "order_id", "total_amount", "quantity"
+  
+  LINE 15:     CURRENT_TIMESTAMP as dbt_updated_at
+                                                 ^
+[0m11:04:58.238130 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74969555-0f78-49dc-87fa-c85bcd459b29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186dc0c4b90>]}
+[0m11:04:58.239123 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model main.silver_sales ........................ [[31mERROR[0m in 0.11s]
+[0m11:04:58.240145 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_sales
+[0m11:04:58.241065 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_lakehouse.silver_sales' to be skipped because of status 'error'.  Reason: Runtime Error in model silver_sales (models/silver/silver_sales.sql)
+  Binder Error: Referenced column "sale_id" not found in FROM clause!
+  Candidate bindings: "customer_id", "order_id", "total_amount", "quantity"
+  
+  LINE 15:     CURRENT_TIMESTAMP as dbt_updated_at
+                                                 ^.
+[0m11:04:58.244307 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:04:58.245397 [debug] [MainThread]: On master: BEGIN
+[0m11:04:58.246091 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:04:58.247272 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:04:58.247926 [debug] [MainThread]: On master: COMMIT
+[0m11:04:58.248546 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:04:58.249265 [debug] [MainThread]: On master: COMMIT
+[0m11:04:58.250518 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:04:58.251391 [debug] [MainThread]: On master: Close
+[0m11:04:58.252189 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:04:58.252805 [debug] [MainThread]: Connection 'model.ecommerce_lakehouse.silver_sales' was properly closed.
+[0m11:04:58.253507 [info ] [MainThread]: 
+[0m11:04:58.254266 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 4.17 seconds (4.17s).
+[0m11:04:58.255998 [debug] [MainThread]: Command end result
+[0m11:04:58.308152 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:04:58.321600 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:04:58.331129 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:04:58.342731 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m11:04:58.343425 [info ] [MainThread]: 
+[0m11:04:58.344203 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:04:58.344982 [info ] [MainThread]: 
+[0m11:04:58.345794 [error] [MainThread]: [[31mERROR[0m]: in model silver_sales (models/silver/silver_sales.sql)
+[0m11:04:58.346895 [error] [MainThread]:   Runtime Error in model silver_sales (models/silver/silver_sales.sql)
+  Binder Error: Referenced column "sale_id" not found in FROM clause!
+  Candidate bindings: "customer_id", "order_id", "total_amount", "quantity"
+  
+  LINE 15:     CURRENT_TIMESTAMP as dbt_updated_at
+                                                 ^
+[0m11:04:58.347753 [info ] [MainThread]: 
+[0m11:04:58.348869 [info ] [MainThread]:   compiled code at target/compiled/ecommerce_lakehouse/models/silver/silver_sales.sql
+[0m11:04:58.349771 [info ] [MainThread]: 
+[0m11:04:58.350696 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:04:58.354047 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 18.052094, "process_in_blocks": "45228", "process_kernel_time": 2.707061, "process_mem_max_rss": "189368", "process_out_blocks": "0", "process_user_time": 4.028517}
+[0m11:04:58.355498 [debug] [MainThread]: Command `dbt run` failed at 11:04:58.355326 after 18.05 seconds
+[0m11:04:58.356521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186de01c350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186de05bdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186e4eefb60>]}
+[0m11:04:58.357595 [debug] [MainThread]: Flushing usage events
+[0m11:04:58.908273 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:09:46.474402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718674995550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71867675ca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71867316f890>]}
+
+
+============================== 11:09:46.485515 | 5fac57b8-1318-4f09-99e0-12022499d1d2 ==============================
+[0m11:09:46.485515 [info ] [MainThread]: Running with dbt=1.12.6
+[0m11:09:46.486459 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'profiles_dir': '/home/cardoso/.dbt', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'write_json': 'True', 'debug': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'log_format': 'default', 'version_check': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'printer_width': '80', 'invocation_command': 'dbt run', 'target_path': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'no_print': 'None'}
+[0m11:09:47.345057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866ec8b5c0>]}
+[0m11:09:47.416785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718673367130>]}
+[0m11:09:47.432610 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m11:09:55.352003 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m11:09:57.160709 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:09:57.161967 [debug] [MainThread]: Partial parsing: updated file: ecommerce_lakehouse://models/silver/silver_sales.sql
+[0m11:09:57.403164 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_lakehouse.bronze
+- models.ecommerce_lakehouse.gold
+[0m11:09:57.408033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866df54650>]}
+[0m11:09:57.490082 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:09:57.500620 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:09:57.820558 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:09:57.909245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866c390230>]}
+[0m11:09:57.910135 [info ] [MainThread]: Found 3 models, 511 macros
+[0m11:09:57.910938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866c3967b0>]}
+[0m11:09:57.913155 [info ] [MainThread]: 
+[0m11:09:57.914133 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:09:57.914998 [info ] [MainThread]: 
+[0m11:09:57.916002 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:09:57.921411 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_lakehouse'
+[0m11:10:00.521498 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse"
+[0m11:10:00.522396 [debug] [ThreadPool]: On list_lakehouse: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"lakehouse"'
+    
+  
+  
+[0m11:10:00.523230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:10:00.787618 [debug] [ThreadPool]: SQL status: OK in 0.264 seconds
+[0m11:10:00.790061 [debug] [ThreadPool]: On list_lakehouse: Close
+[0m11:10:00.791289 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_lakehouse, now create_lakehouse_main)
+[0m11:10:00.792150 [debug] [ThreadPool]: Creating schema "database: "lakehouse"
+schema: "main"
+"
+[0m11:10:00.799191 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:10:00.800188 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='lakehouse'
+        and type != 'duckdb'
+    
+  
+[0m11:10:00.800967 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:10:00.804826 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m11:10:00.806593 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:10:00.807284 [debug] [ThreadPool]: On create_lakehouse_main: BEGIN
+[0m11:10:00.808598 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:10:00.809296 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:10:00.809949 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+    
+        create schema if not exists "lakehouse"."main"
+    
+[0m11:10:00.812648 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:10:00.813750 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:10:00.814379 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:10:00.815011 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:10:00.816026 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:10:00.816806 [debug] [ThreadPool]: On create_lakehouse_main: Close
+[0m11:10:00.818754 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_lakehouse_main, now list_lakehouse_main)
+[0m11:10:00.823337 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:10:00.824230 [debug] [ThreadPool]: On list_lakehouse_main: BEGIN
+[0m11:10:00.824998 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:10:00.826240 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:10:00.826996 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:10:00.827637 [debug] [ThreadPool]: On list_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse_main"} */
+select
+      'lakehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'lakehouse'
+  
+[0m11:10:00.849667 [debug] [ThreadPool]: SQL status: OK in 0.021 seconds
+[0m11:10:00.851893 [debug] [ThreadPool]: On list_lakehouse_main: ROLLBACK
+[0m11:10:00.853269 [debug] [ThreadPool]: On list_lakehouse_main: Close
+[0m11:10:00.854897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718657650ef0>]}
+[0m11:10:00.855740 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:10:00.856440 [debug] [MainThread]: On master: BEGIN
+[0m11:10:00.857111 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:10:00.858403 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:10:00.859137 [debug] [MainThread]: On master: COMMIT
+[0m11:10:00.859823 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:10:00.860665 [debug] [MainThread]: On master: COMMIT
+[0m11:10:00.861895 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:10:00.862603 [debug] [MainThread]: On master: Close
+[0m11:10:00.865729 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_customers
+[0m11:10:00.866688 [info ] [Thread-1 (]: 1 of 3 START sql table model main.silver_customers ............................. [RUN]
+[0m11:10:00.867574 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_lakehouse_main, now model.ecommerce_lakehouse.silver_customers)
+[0m11:10:00.868346 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_customers
+[0m11:10:00.873040 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.881070 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_customers
+[0m11:10:00.883904 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.885031 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+select database_name, type from duckdb_databases()
+[0m11:10:00.885795 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:10:00.887633 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:10:00.889896 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.891017 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('lakehouse')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m11:10:00.894024 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:10:00.952635 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.962778 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.963841 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: BEGIN
+[0m11:10:00.965338 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:00.966370 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:00.967404 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_customers__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    customer_id,
+    CAST(signup_date AS DATE) AS signup_date,
+    UPPER(state) AS state,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/customers.parquet')
+    );
+    
+  
+[0m11:10:01.000173 [debug] [Thread-1 (]: SQL status: OK in 0.032 seconds
+[0m11:10:01.005097 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:01.006117 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_customers'
+  
+[0m11:10:01.008570 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:10:01.016396 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:01.017501 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers" rename to "silver_customers__dbt_backup"
+[0m11:10:01.020619 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:10:01.023015 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:01.023881 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers__dbt_tmp" rename to "silver_customers"
+[0m11:10:01.025354 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.041843 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:10:01.042975 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:01.043924 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:10:01.050880 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m11:10:01.058231 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:10:01.059371 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+      drop table if exists "lakehouse"."main"."silver_customers__dbt_backup" cascade
+    
+[0m11:10:01.063114 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:10:01.065906 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: Close
+[0m11:10:01.076106 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7186577a1190>]}
+[0m11:10:01.078057 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main.silver_customers ........................ [[32mOK[0m in 0.20s]
+[0m11:10:01.079915 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_customers
+[0m11:10:01.081397 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_products
+[0m11:10:01.082603 [info ] [Thread-1 (]: 2 of 3 START sql table model main.silver_products .............................. [RUN]
+[0m11:10:01.083831 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_customers, now model.ecommerce_lakehouse.silver_products)
+[0m11:10:01.085231 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_products
+[0m11:10:01.088595 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.099195 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_products
+[0m11:10:01.104485 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.114530 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.115890 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: BEGIN
+[0m11:10:01.117215 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:10:01.119208 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:10:01.120200 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.121072 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_products__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    product_id,
+    category,
+    unit_price,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/products.parquet')
+    );
+    
+  
+[0m11:10:01.130193 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m11:10:01.132002 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.132957 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_products'
+  
+[0m11:10:01.135061 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.138275 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.139239 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+alter table "lakehouse"."main"."silver_products" rename to "silver_products__dbt_backup"
+[0m11:10:01.140863 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.143756 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.144792 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+alter table "lakehouse"."main"."silver_products__dbt_tmp" rename to "silver_products"
+[0m11:10:01.146586 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.149414 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:10:01.150441 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.151340 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:10:01.155789 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:10:01.158330 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:10:01.159375 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+      drop table if exists "lakehouse"."main"."silver_products__dbt_backup" cascade
+    
+[0m11:10:01.162797 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:10:01.164926 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: Close
+[0m11:10:01.166697 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718654541860>]}
+[0m11:10:01.168187 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.silver_products ......................... [[32mOK[0m in 0.08s]
+[0m11:10:01.169406 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_products
+[0m11:10:01.170265 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_sales
+[0m11:10:01.171220 [info ] [Thread-1 (]: 3 of 3 START sql table model main.silver_sales ................................. [RUN]
+[0m11:10:01.172213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_products, now model.ecommerce_lakehouse.silver_sales)
+[0m11:10:01.173254 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_sales
+[0m11:10:01.176703 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.195757 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_sales
+[0m11:10:01.202186 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.224044 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.226094 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: BEGIN
+[0m11:10:01.227037 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:10:01.228495 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.229427 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.230222 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_sales__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    order_id AS sale_id,
+    customer_id,
+    product_id,
+    quantity,
+    total_amount,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/sales.parquet')
+    );
+    
+  
+[0m11:10:01.244824 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m11:10:01.249468 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.250694 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+alter table "lakehouse"."main"."silver_sales__dbt_tmp" rename to "silver_sales"
+[0m11:10:01.252720 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.254985 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: COMMIT
+[0m11:10:01.255905 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.256803 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: COMMIT
+[0m11:10:01.263577 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m11:10:01.266410 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:10:01.267439 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+      drop table if exists "lakehouse"."main"."silver_sales__dbt_backup" cascade
+    
+[0m11:10:01.269097 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:10:01.270886 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: Close
+[0m11:10:01.271972 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fac57b8-1318-4f09-99e0-12022499d1d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718654555ef0>]}
+[0m11:10:01.273035 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.silver_sales ............................ [[32mOK[0m in 0.10s]
+[0m11:10:01.274082 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_sales
+[0m11:10:01.276785 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:10:01.277839 [debug] [MainThread]: On master: BEGIN
+[0m11:10:01.278784 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:10:01.281303 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m11:10:01.282725 [debug] [MainThread]: On master: COMMIT
+[0m11:10:01.283910 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:10:01.285207 [debug] [MainThread]: On master: COMMIT
+[0m11:10:01.287193 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:10:01.288631 [debug] [MainThread]: On master: Close
+[0m11:10:01.289846 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:10:01.290764 [debug] [MainThread]: Connection 'model.ecommerce_lakehouse.silver_sales' was properly closed.
+[0m11:10:01.291787 [info ] [MainThread]: 
+[0m11:10:01.292851 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 3.38 seconds (3.38s).
+[0m11:10:01.294778 [debug] [MainThread]: Command end result
+[0m11:10:01.340783 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:10:01.352209 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:10:01.362768 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:10:01.375817 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m11:10:01.376995 [info ] [MainThread]: 
+[0m11:10:01.378041 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:10:01.379017 [info ] [MainThread]: 
+[0m11:10:01.379857 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:10:01.382991 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.982435, "process_in_blocks": "44827", "process_kernel_time": 2.442204, "process_mem_max_rss": "188440", "process_out_blocks": "0", "process_user_time": 3.152197}
+[0m11:10:01.384405 [debug] [MainThread]: Command `dbt run` succeeded at 11:10:01.384185 after 14.98 seconds
+[0m11:10:01.385526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866c338050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71866c3604d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718673193b60>]}
+[0m11:10:01.386662 [debug] [MainThread]: Flushing usage events
+[0m11:10:02.015177 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:18:11.131863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6abbab5550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6abd8c0a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6aba28b890>]}
+
+
+============================== 11:18:11.145205 | 7be5321b-50b5-40da-8786-7c6654413e7f ==============================
+[0m11:18:11.145205 [info ] [MainThread]: Running with dbt=1.12.6
+[0m11:18:11.146791 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'partial_parse': 'True', 'profiles_dir': '/home/cardoso/.dbt', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'write_json': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_format': 'default', 'empty': 'False', 'introspect': 'True', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'quiet': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'debug': 'False'}
+[0m11:18:12.087967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6ab551f5c0>]}
+[0m11:18:12.157543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6aba487130>]}
+[0m11:18:12.173438 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m11:18:20.293310 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m11:18:21.963303 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:18:21.964416 [debug] [MainThread]: Partial parsing: added file: ecommerce_lakehouse://models/gold/gold_sales_summary.sql
+[0m11:18:22.203918 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_lakehouse.bronze
+[0m11:18:22.208349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6ab503c650>]}
+[0m11:18:22.280660 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:18:22.289318 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:18:22.589112 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:18:22.680287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9f380230>]}
+[0m11:18:22.681148 [info ] [MainThread]: Found 4 models, 511 macros
+[0m11:18:22.681991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9f38a890>]}
+[0m11:18:22.684366 [info ] [MainThread]: 
+[0m11:18:22.685264 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:18:22.685987 [info ] [MainThread]: 
+[0m11:18:22.687026 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:18:22.692612 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_lakehouse'
+[0m11:18:25.467463 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse"
+[0m11:18:25.468506 [debug] [ThreadPool]: On list_lakehouse: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"lakehouse"'
+    
+  
+  
+[0m11:18:25.469396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:18:25.727359 [debug] [ThreadPool]: SQL status: OK in 0.258 seconds
+[0m11:18:25.730031 [debug] [ThreadPool]: On list_lakehouse: Close
+[0m11:18:25.731698 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_lakehouse, now create_lakehouse_main)
+[0m11:18:25.732785 [debug] [ThreadPool]: Creating schema "database: "lakehouse"
+schema: "main"
+"
+[0m11:18:25.739475 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:18:25.740692 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='lakehouse'
+        and type != 'duckdb'
+    
+  
+[0m11:18:25.741607 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:18:25.746154 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m11:18:25.748406 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:18:25.749204 [debug] [ThreadPool]: On create_lakehouse_main: BEGIN
+[0m11:18:25.750568 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:18:25.751252 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:18:25.751897 [debug] [ThreadPool]: On create_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "create_lakehouse_main"} */
+
+    
+    
+        create schema if not exists "lakehouse"."main"
+    
+[0m11:18:25.754478 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:18:25.755607 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:18:25.756270 [debug] [ThreadPool]: Using duckdb connection "create_lakehouse_main"
+[0m11:18:25.756927 [debug] [ThreadPool]: On create_lakehouse_main: COMMIT
+[0m11:18:25.758024 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:18:25.758735 [debug] [ThreadPool]: On create_lakehouse_main: Close
+[0m11:18:25.760947 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_lakehouse_main, now list_lakehouse_main)
+[0m11:18:25.766668 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:18:25.767946 [debug] [ThreadPool]: On list_lakehouse_main: BEGIN
+[0m11:18:25.768709 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:18:25.770073 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:18:25.770909 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m11:18:25.771683 [debug] [ThreadPool]: On list_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse_main"} */
+select
+      'lakehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'lakehouse'
+  
+[0m11:18:25.794681 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m11:18:25.797090 [debug] [ThreadPool]: On list_lakehouse_main: ROLLBACK
+[0m11:18:25.798685 [debug] [ThreadPool]: On list_lakehouse_main: Close
+[0m11:18:25.800556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9e750fc0>]}
+[0m11:18:25.801505 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:18:25.802209 [debug] [MainThread]: On master: BEGIN
+[0m11:18:25.802877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:18:25.804325 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:18:25.805077 [debug] [MainThread]: On master: COMMIT
+[0m11:18:25.805739 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:18:25.806399 [debug] [MainThread]: On master: COMMIT
+[0m11:18:25.807632 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:18:25.808524 [debug] [MainThread]: On master: Close
+[0m11:18:25.812035 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_customers
+[0m11:18:25.812998 [info ] [Thread-1 (]: 1 of 4 START sql table model main.silver_customers ............................. [RUN]
+[0m11:18:25.814079 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_lakehouse_main, now model.ecommerce_lakehouse.silver_customers)
+[0m11:18:25.814887 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_customers
+[0m11:18:25.820419 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.828835 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_customers
+[0m11:18:25.830548 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.831558 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+select database_name, type from duckdb_databases()
+[0m11:18:25.833106 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:18:25.835070 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:18:25.836844 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.837666 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('lakehouse')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m11:18:25.839805 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:25.895918 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.904354 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.905204 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: BEGIN
+[0m11:18:25.906522 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:25.907680 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.908425 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_customers__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    customer_id,
+    CAST(signup_date AS DATE) AS signup_date,
+    UPPER(state) AS state,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/customers.parquet')
+    );
+    
+  
+[0m11:18:25.935270 [debug] [Thread-1 (]: SQL status: OK in 0.026 seconds
+[0m11:18:25.939992 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.940975 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_customers'
+  
+[0m11:18:25.942750 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:25.950363 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.951303 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers" rename to "silver_customers__dbt_backup"
+[0m11:18:25.954402 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:18:25.956857 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.957783 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+alter table "lakehouse"."main"."silver_customers__dbt_tmp" rename to "silver_customers"
+[0m11:18:25.959279 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:25.974971 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:18:25.976020 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:25.976825 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: COMMIT
+[0m11:18:26.021308 [debug] [Thread-1 (]: SQL status: OK in 0.044 seconds
+[0m11:18:26.026305 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_customers"
+[0m11:18:26.027562 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_customers"} */
+
+      drop table if exists "lakehouse"."main"."silver_customers__dbt_backup" cascade
+    
+[0m11:18:26.031146 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:18:26.033893 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_customers: Close
+[0m11:18:26.042871 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9e899310>]}
+[0m11:18:26.044434 [info ] [Thread-1 (]: 1 of 4 OK created sql table model main.silver_customers ........................ [[32mOK[0m in 0.22s]
+[0m11:18:26.045532 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_customers
+[0m11:18:26.046344 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_products
+[0m11:18:26.047198 [info ] [Thread-1 (]: 2 of 4 START sql table model main.silver_products .............................. [RUN]
+[0m11:18:26.048271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_customers, now model.ecommerce_lakehouse.silver_products)
+[0m11:18:26.049046 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_products
+[0m11:18:26.051188 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.059435 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_products
+[0m11:18:26.062821 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.071864 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.072685 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: BEGIN
+[0m11:18:26.073423 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:18:26.075131 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:18:26.075972 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.076711 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_products__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    product_id,
+    category,
+    unit_price,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/products.parquet')
+    );
+    
+  
+[0m11:18:26.085370 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m11:18:26.086818 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.087706 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_products'
+  
+[0m11:18:26.089964 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.092742 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.093607 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+alter table "lakehouse"."main"."silver_products" rename to "silver_products__dbt_backup"
+[0m11:18:26.095324 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.097581 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.098463 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+alter table "lakehouse"."main"."silver_products__dbt_tmp" rename to "silver_products"
+[0m11:18:26.099821 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.101668 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:18:26.102537 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.103219 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: COMMIT
+[0m11:18:26.106806 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:18:26.109209 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_products"
+[0m11:18:26.110037 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_products"} */
+
+      drop table if exists "lakehouse"."main"."silver_products__dbt_backup" cascade
+    
+[0m11:18:26.113081 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:18:26.114711 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_products: Close
+[0m11:18:26.115706 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9c1459c0>]}
+[0m11:18:26.116638 [info ] [Thread-1 (]: 2 of 4 OK created sql table model main.silver_products ......................... [[32mOK[0m in 0.07s]
+[0m11:18:26.117650 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_products
+[0m11:18:26.118414 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.silver_sales
+[0m11:18:26.119260 [info ] [Thread-1 (]: 3 of 4 START sql table model main.silver_sales ................................. [RUN]
+[0m11:18:26.120395 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_products, now model.ecommerce_lakehouse.silver_sales)
+[0m11:18:26.121189 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.silver_sales
+[0m11:18:26.123272 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.130715 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.silver_sales
+[0m11:18:26.133734 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.142050 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.143198 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: BEGIN
+[0m11:18:26.144100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:18:26.145556 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.146461 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.147275 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."silver_sales__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    order_id AS sale_id,
+    customer_id,
+    product_id,
+    quantity,
+    total_amount,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    CURRENT_TIMESTAMP as dbt_updated_at
+FROM read_parquet('../data/bronze/sales.parquet')
+    );
+    
+  
+[0m11:18:26.157064 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m11:18:26.159057 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.160052 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'lakehouse'
+      AND schema_name = 'main'
+      AND table_name = 'silver_sales'
+  
+[0m11:18:26.161936 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.164608 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.165373 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+alter table "lakehouse"."main"."silver_sales" rename to "silver_sales__dbt_backup"
+[0m11:18:26.166699 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.169077 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.169956 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+alter table "lakehouse"."main"."silver_sales__dbt_tmp" rename to "silver_sales"
+[0m11:18:26.171370 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.173280 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: COMMIT
+[0m11:18:26.174054 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.174693 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: COMMIT
+[0m11:18:26.180011 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:18:26.181876 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.silver_sales"
+[0m11:18:26.182605 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.silver_sales"} */
+
+      drop table if exists "lakehouse"."main"."silver_sales__dbt_backup" cascade
+    
+[0m11:18:26.186025 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:18:26.187802 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.silver_sales: Close
+[0m11:18:26.188879 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9c14eb70>]}
+[0m11:18:26.189774 [info ] [Thread-1 (]: 3 of 4 OK created sql table model main.silver_sales ............................ [[32mOK[0m in 0.07s]
+[0m11:18:26.190658 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.silver_sales
+[0m11:18:26.192045 [debug] [Thread-1 (]: Began running node model.ecommerce_lakehouse.gold_sales_summary
+[0m11:18:26.192839 [info ] [Thread-1 (]: 4 of 4 START sql table model main.gold_sales_summary ........................... [RUN]
+[0m11:18:26.193695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_lakehouse.silver_sales, now model.ecommerce_lakehouse.gold_sales_summary)
+[0m11:18:26.194408 [debug] [Thread-1 (]: Began compiling node model.ecommerce_lakehouse.gold_sales_summary
+[0m11:18:26.196821 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.209439 [debug] [Thread-1 (]: Began executing node model.ecommerce_lakehouse.gold_sales_summary
+[0m11:18:26.212852 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.225818 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.226788 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: BEGIN
+[0m11:18:26.227645 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:18:26.229068 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.229838 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.230637 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.gold_sales_summary"} */
+
+    
+
+    create  table
+      "lakehouse"."main"."gold_sales_summary__dbt_tmp"
+  
+    
+    as (
+      
+
+SELECT
+    p.category,
+    COUNT(s.sale_id) AS total_orders,
+    SUM(s.quantity) AS total_quantity_sold,
+    ROUND(SUM(s.total_amount), 2) AS total_revenue,
+    CURRENT_TIMESTAMP AS dbt_updated_at
+FROM "lakehouse"."main"."silver_sales" s
+JOIN "lakehouse"."main"."silver_products" p 
+    ON s.product_id = p.product_id
+GROUP BY p.category
+    );
+    
+  
+[0m11:18:26.250376 [debug] [Thread-1 (]: SQL status: OK in 0.019 seconds
+[0m11:18:26.253369 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.254254 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.gold_sales_summary"} */
+alter table "lakehouse"."main"."gold_sales_summary__dbt_tmp" rename to "gold_sales_summary"
+[0m11:18:26.255709 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.257501 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: COMMIT
+[0m11:18:26.258449 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.259165 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: COMMIT
+[0m11:18:26.263265 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:18:26.265718 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_lakehouse.gold_sales_summary"
+[0m11:18:26.266550 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "model.ecommerce_lakehouse.gold_sales_summary"} */
+
+      drop table if exists "lakehouse"."main"."gold_sales_summary__dbt_backup" cascade
+    
+[0m11:18:26.268212 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:18:26.269966 [debug] [Thread-1 (]: On model.ecommerce_lakehouse.gold_sales_summary: Close
+[0m11:18:26.270948 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7be5321b-50b5-40da-8786-7c6654413e7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6a9c1ba850>]}
+[0m11:18:26.271978 [info ] [Thread-1 (]: 4 of 4 OK created sql table model main.gold_sales_summary ...................... [[32mOK[0m in 0.08s]
+[0m11:18:26.272950 [debug] [Thread-1 (]: Finished running node model.ecommerce_lakehouse.gold_sales_summary
+[0m11:18:26.275035 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:18:26.275792 [debug] [MainThread]: On master: BEGIN
+[0m11:18:26.276422 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:18:26.277930 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:18:26.278832 [debug] [MainThread]: On master: COMMIT
+[0m11:18:26.279507 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:18:26.280194 [debug] [MainThread]: On master: COMMIT
+[0m11:18:26.281270 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:18:26.281972 [debug] [MainThread]: On master: Close
+[0m11:18:26.282732 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:18:26.283365 [debug] [MainThread]: Connection 'model.ecommerce_lakehouse.gold_sales_summary' was properly closed.
+[0m11:18:26.284114 [info ] [MainThread]: 
+[0m11:18:26.284854 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 3.60 seconds (3.60s).
+[0m11:18:26.286217 [debug] [MainThread]: Command end result
+[0m11:18:26.324612 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m11:18:26.333698 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m11:18:26.343488 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m11:18:26.353171 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m11:18:26.353872 [info ] [MainThread]: 
+[0m11:18:26.354826 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:18:26.355701 [info ] [MainThread]: 
+[0m11:18:26.356423 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m11:18:26.358866 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.317513, "process_in_blocks": "44828", "process_kernel_time": 2.511955, "process_mem_max_rss": "193328", "process_out_blocks": "0", "process_user_time": 3.14778}
+[0m11:18:26.359701 [debug] [MainThread]: Command `dbt run` succeeded at 11:18:26.359537 after 15.32 seconds
+[0m11:18:26.360368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6aba2b7b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6aba462970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d6ab54542f0>]}
+[0m11:18:26.361039 [debug] [MainThread]: Flushing usage events
+[0m11:18:27.092267 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:02:04.819545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f56cdc9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f56eb58a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f56b59f890>]}
+
+
+============================== 21:02:04.833941 | cc960439-49fb-4078-82b7-9ce889db913b ==============================
+[0m21:02:04.833941 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:02:04.835001 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'profiles_dir': '/home/cardoso/.dbt', 'target_path': 'None', 'partial_parse': 'True', 'empty': 'None', 'use_colors': 'True', 'log_path': '/mnt/d/Projetos/ecommerce-lakehouse/dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test', 'log_cache_events': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'no_print': 'None', 'quiet': 'False', 'printer_width': '80', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'fail_fast': 'False', 'maximum_seed_size_mib': '1'}
+[0m21:02:05.816078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f5670bf5c0>]}
+[0m21:02:05.876492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f56b79b130>]}
+[0m21:02:05.893775 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m21:02:14.191284 [debug] [MainThread]: checksum: 00ed012bc422a7eea85d05c9a41c12f41eb02f075d011fdae841d2095e014d5d, vars: {}, profile: ecommerce_lakehouse, target: dev, version: 1.12.6
+[0m21:02:16.213729 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:02:16.215103 [debug] [MainThread]: Partial parsing: added file: ecommerce_lakehouse://models/schema.yml
+[0m21:02:16.577276 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_lakehouse.bronze
+[0m21:02:16.582052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f565edcc50>]}
+[0m21:02:16.692002 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m21:02:16.701516 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m21:02:17.015183 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m21:02:17.142853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f565d4cd70>]}
+[0m21:02:17.143645 [info ] [MainThread]: Found 4 models, 8 data tests, 511 macros
+[0m21:02:17.144326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f565c1f850>]}
+[0m21:02:17.146384 [info ] [MainThread]: 
+[0m21:02:17.147224 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:02:17.147882 [info ] [MainThread]: 
+[0m21:02:17.148713 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:02:17.152986 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_lakehouse_main'
+[0m21:02:19.782878 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m21:02:19.783870 [debug] [ThreadPool]: On list_lakehouse_main: BEGIN
+[0m21:02:19.784623 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:02:20.183928 [debug] [ThreadPool]: SQL status: OK in 0.399 seconds
+[0m21:02:20.184814 [debug] [ThreadPool]: Using duckdb connection "list_lakehouse_main"
+[0m21:02:20.185492 [debug] [ThreadPool]: On list_lakehouse_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "connection_name": "list_lakehouse_main"} */
+select
+      'lakehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'lakehouse'
+  
+[0m21:02:20.271501 [debug] [ThreadPool]: SQL status: OK in 0.085 seconds
+[0m21:02:20.273630 [debug] [ThreadPool]: On list_lakehouse_main: ROLLBACK
+[0m21:02:20.274818 [debug] [ThreadPool]: On list_lakehouse_main: Close
+[0m21:02:20.276464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc960439-49fb-4078-82b7-9ce889db913b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f565120870>]}
+[0m21:02:20.277407 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:02:20.278009 [debug] [MainThread]: On master: BEGIN
+[0m21:02:20.278631 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:02:20.279585 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m21:02:20.280198 [debug] [MainThread]: On master: COMMIT
+[0m21:02:20.280775 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:02:20.281358 [debug] [MainThread]: On master: COMMIT
+[0m21:02:20.282208 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:02:20.282926 [debug] [MainThread]: On master: Close
+[0m21:02:20.299801 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1
+[0m21:02:20.300583 [info ] [Thread-1 (]: 1 of 8 START test not_null_gold_sales_summary_category ......................... [RUN]
+[0m21:02:20.301535 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_lakehouse_main, now test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1)
+[0m21:02:20.302213 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1
+[0m21:02:20.314766 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.326993 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1
+[0m21:02:20.328634 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.329352 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"} */
+select database_name, type from duckdb_databases()
+[0m21:02:20.329998 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.331869 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:02:20.333491 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.334230 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('lakehouse')
+                      and lower(schema_name) = lower('main_dbt_test__audit')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m21:02:20.336688 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:02:20.350958 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.362174 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.362937 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: BEGIN
+[0m21:02:20.364102 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.364741 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"
+[0m21:02:20.365383 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category
+from "lakehouse"."main"."gold_sales_summary"
+where category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.374837 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m21:02:20.378536 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: ROLLBACK
+[0m21:02:20.379822 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1: Close
+[0m21:02:20.380917 [info ] [Thread-1 (]: 1 of 8 PASS not_null_gold_sales_summary_category ............................... [[32mPASS[0m in 0.08s]
+[0m21:02:20.381909 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1
+[0m21:02:20.382728 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493
+[0m21:02:20.383713 [info ] [Thread-1 (]: 2 of 8 START test not_null_silver_customers_customer_id ........................ [RUN]
+[0m21:02:20.384734 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.not_null_gold_sales_summary_category.3e464502e1, now test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493)
+[0m21:02:20.385624 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493
+[0m21:02:20.391081 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493"
+[0m21:02:20.398729 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493
+[0m21:02:20.400652 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493"
+[0m21:02:20.408394 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493"
+[0m21:02:20.409315 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493: BEGIN
+[0m21:02:20.410045 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.411196 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.411892 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493"
+[0m21:02:20.412596 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "lakehouse"."main"."silver_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.414702 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.416848 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493: ROLLBACK
+[0m21:02:20.418417 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493: Close
+[0m21:02:20.419535 [info ] [Thread-1 (]: 2 of 8 PASS not_null_silver_customers_customer_id .............................. [[32mPASS[0m in 0.03s]
+[0m21:02:20.420760 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493
+[0m21:02:20.421560 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e
+[0m21:02:20.422247 [info ] [Thread-1 (]: 3 of 8 START test not_null_silver_products_product_id .......................... [RUN]
+[0m21:02:20.423112 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.not_null_silver_customers_customer_id.9f5f8d4493, now test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e)
+[0m21:02:20.423775 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e
+[0m21:02:20.428736 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e"
+[0m21:02:20.437685 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e
+[0m21:02:20.439681 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e"
+[0m21:02:20.447901 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e"
+[0m21:02:20.448741 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e: BEGIN
+[0m21:02:20.449482 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.450724 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.451555 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e"
+[0m21:02:20.452268 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "lakehouse"."main"."silver_products"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.454274 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.456032 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e: ROLLBACK
+[0m21:02:20.457207 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e: Close
+[0m21:02:20.458239 [info ] [Thread-1 (]: 3 of 8 PASS not_null_silver_products_product_id ................................ [[32mPASS[0m in 0.04s]
+[0m21:02:20.459200 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e
+[0m21:02:20.459913 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3
+[0m21:02:20.460578 [info ] [Thread-1 (]: 4 of 8 START test not_null_silver_sales_sale_id ................................ [RUN]
+[0m21:02:20.461373 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.not_null_silver_products_product_id.2ed3094c9e, now test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3)
+[0m21:02:20.462120 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3
+[0m21:02:20.466816 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3"
+[0m21:02:20.474653 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3
+[0m21:02:20.476414 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3"
+[0m21:02:20.484106 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3"
+[0m21:02:20.484998 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3: BEGIN
+[0m21:02:20.486070 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.487321 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.487974 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3"
+[0m21:02:20.488644 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sale_id
+from "lakehouse"."main"."silver_sales"
+where sale_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.490472 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.492716 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3: ROLLBACK
+[0m21:02:20.493893 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3: Close
+[0m21:02:20.494833 [info ] [Thread-1 (]: 4 of 8 PASS not_null_silver_sales_sale_id ...................................... [[32mPASS[0m in 0.03s]
+[0m21:02:20.495692 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3
+[0m21:02:20.496397 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49
+[0m21:02:20.497101 [info ] [Thread-1 (]: 5 of 8 START test unique_gold_sales_summary_category ........................... [RUN]
+[0m21:02:20.497976 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.not_null_silver_sales_sale_id.48c401fbc3, now test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49)
+[0m21:02:20.498685 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49
+[0m21:02:20.504991 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49"
+[0m21:02:20.513177 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49
+[0m21:02:20.515389 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49"
+[0m21:02:20.524020 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49"
+[0m21:02:20.524900 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49: BEGIN
+[0m21:02:20.525779 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.527086 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.527813 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49"
+[0m21:02:20.528461 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    category as unique_field,
+    count(*) as n_records
+
+from "lakehouse"."main"."gold_sales_summary"
+where category is not null
+group by category
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.550457 [debug] [Thread-1 (]: SQL status: OK in 0.021 seconds
+[0m21:02:20.552368 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49: ROLLBACK
+[0m21:02:20.553429 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49: Close
+[0m21:02:20.554284 [info ] [Thread-1 (]: 5 of 8 PASS unique_gold_sales_summary_category ................................. [[32mPASS[0m in 0.06s]
+[0m21:02:20.555207 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49
+[0m21:02:20.555910 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3
+[0m21:02:20.556581 [info ] [Thread-1 (]: 6 of 8 START test unique_silver_customers_customer_id .......................... [RUN]
+[0m21:02:20.557303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.unique_gold_sales_summary_category.400e05ec49, now test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3)
+[0m21:02:20.557964 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3
+[0m21:02:20.562675 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3"
+[0m21:02:20.570233 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3
+[0m21:02:20.572203 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3"
+[0m21:02:20.580046 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3"
+[0m21:02:20.580926 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3: BEGIN
+[0m21:02:20.581638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.582799 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.583504 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3"
+[0m21:02:20.584137 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "lakehouse"."main"."silver_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.591021 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m21:02:20.592780 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3: ROLLBACK
+[0m21:02:20.593822 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3: Close
+[0m21:02:20.594823 [info ] [Thread-1 (]: 6 of 8 PASS unique_silver_customers_customer_id ................................ [[32mPASS[0m in 0.04s]
+[0m21:02:20.595763 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3
+[0m21:02:20.596526 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4
+[0m21:02:20.597212 [info ] [Thread-1 (]: 7 of 8 START test unique_silver_products_product_id ............................ [RUN]
+[0m21:02:20.597962 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.unique_silver_customers_customer_id.4fbff98be3, now test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4)
+[0m21:02:20.598658 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4
+[0m21:02:20.603578 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4"
+[0m21:02:20.611169 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4
+[0m21:02:20.613394 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4"
+[0m21:02:20.621346 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4"
+[0m21:02:20.622184 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4: BEGIN
+[0m21:02:20.622944 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.624441 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.625154 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4"
+[0m21:02:20.625801 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "lakehouse"."main"."silver_products"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.631892 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m21:02:20.633487 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4: ROLLBACK
+[0m21:02:20.634494 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4: Close
+[0m21:02:20.635378 [info ] [Thread-1 (]: 7 of 8 PASS unique_silver_products_product_id .................................. [[32mPASS[0m in 0.04s]
+[0m21:02:20.636320 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4
+[0m21:02:20.637026 [debug] [Thread-1 (]: Began running node test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13
+[0m21:02:20.637682 [info ] [Thread-1 (]: 8 of 8 START test unique_silver_sales_sale_id .................................. [RUN]
+[0m21:02:20.638478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_lakehouse.unique_silver_products_product_id.26f38420b4, now test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13)
+[0m21:02:20.639128 [debug] [Thread-1 (]: Began compiling node test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13
+[0m21:02:20.643598 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13"
+[0m21:02:20.650660 [debug] [Thread-1 (]: Began executing node test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13
+[0m21:02:20.652203 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13"
+[0m21:02:20.659196 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13"
+[0m21:02:20.659905 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13: BEGIN
+[0m21:02:20.660578 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:02:20.661697 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:02:20.662455 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13"
+[0m21:02:20.663128 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "ecommerce_lakehouse", "target_name": "dev", "node_id": "test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    sale_id as unique_field,
+    count(*) as n_records
+
+from "lakehouse"."main"."silver_sales"
+where sale_id is not null
+group by sale_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:02:20.670149 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m21:02:20.672558 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13: ROLLBACK
+[0m21:02:20.673724 [debug] [Thread-1 (]: On test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13: Close
+[0m21:02:20.674698 [info ] [Thread-1 (]: 8 of 8 PASS unique_silver_sales_sale_id ........................................ [[32mPASS[0m in 0.04s]
+[0m21:02:20.675593 [debug] [Thread-1 (]: Finished running node test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13
+[0m21:02:20.677572 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:02:20.678217 [debug] [MainThread]: On master: BEGIN
+[0m21:02:20.678885 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:02:20.679928 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m21:02:20.680538 [debug] [MainThread]: On master: COMMIT
+[0m21:02:20.681132 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:02:20.681732 [debug] [MainThread]: On master: COMMIT
+[0m21:02:20.682589 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:02:20.683201 [debug] [MainThread]: On master: Close
+[0m21:02:20.683881 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:02:20.684573 [debug] [MainThread]: Connection 'test.ecommerce_lakehouse.unique_silver_sales_sale_id.2cf32b8b13' was properly closed.
+[0m21:02:20.685231 [info ] [MainThread]: 
+[0m21:02:20.685989 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 3.54 seconds (3.54s).
+[0m21:02:20.687568 [debug] [MainThread]: Command end result
+[0m21:02:20.720614 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/manifest.json
+[0m21:02:20.731000 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/semantic_manifest.json
+[0m21:02:20.742630 [debug] [MainThread]: Wrote artifact OsiDocument to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/osi_document.json
+[0m21:02:20.754580 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Projetos/ecommerce-lakehouse/dbt_project/target/run_results.json
+[0m21:02:20.755653 [info ] [MainThread]: 
+[0m21:02:20.756706 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:02:20.757700 [info ] [MainThread]: 
+[0m21:02:20.758624 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m21:02:20.761808 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 16.017656, "process_in_blocks": "53110", "process_kernel_time": 2.480306, "process_mem_max_rss": "193080", "process_out_blocks": "0", "process_user_time": 2.541801}
+[0m21:02:20.763209 [debug] [MainThread]: Command `dbt test` succeeded at 21:02:20.763040 after 16.02 seconds
+[0m21:02:20.764221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f56518b350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f5647487e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f564748940>]}
+[0m21:02:20.765445 [debug] [MainThread]: Flushing usage events
+[0m21:02:21.815186 [debug] [MainThread]: An error was encountered while trying to flush usage events
