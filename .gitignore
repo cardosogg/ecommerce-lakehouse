@@ -1,0 +1,12 @@
+# Ambiente virtual Python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt artifacts
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Base de dados local (opcional: se quiseres que o GitHub tenha apenas o código e não a DB de testes)
+data/lakehouse.duckdb
